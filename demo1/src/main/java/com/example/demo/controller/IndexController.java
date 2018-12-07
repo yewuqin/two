@@ -14,4 +14,9 @@ public class IndexController {
 
         return "one";
     }
+    @RequestMapping("/two.html")
+    public String two(Model model) {
+    	model.addAttribute("score",19);
+    	return "one";
+    }
 }
